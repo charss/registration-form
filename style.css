@@ -1,0 +1,63 @@
+body {
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+.main {
+	position: relative;
+	top   : 2%;
+	left  : 0;
+	right : 0;
+	margin: auto;
+
+	width: 900px;
+	border: 1px;
+	border-color: red;
+	border-style: solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.boxes {
+	border: 1px solid black;
+
+}
+
+.title {
+	margin-left: 3%;
+}
+
+.container {
+	display: flex; /* or inline-flex */
+	flex-direction: row;
+}
+
+.one {
+	flex: 1 1 auto;
+	padding: -10px;
+}
+
+.two {
+	flex: 1 1 auto;
+	border: 1px;
+
+}
+
+.three {
+	flex: 1 1 auto;
+	border: 1px;
+}
+
+#checks {
+	padding-top: 15px;
+}
+
+.four {
+	flex: 1 1 auto;
+	border: 1px;
+}
+
+.second  {
+	margin-top: -25px;
+}
+
