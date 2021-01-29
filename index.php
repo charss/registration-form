@@ -2,17 +2,30 @@
 	<head><title>Student Registration Form</title></head>
 	<link rel='stylesheet' href='style.css'>
 	<body>
+		<?php
+			$name = '';
+		?>
 		<div class='main'>
 			<p class='title'>Student Registration Form</p>
 			<div class='boxes'>
 				<div class='container first'>
 					<div class="one">
-						<p><i>For School Use</i><b>-Permission to Register:</b> _____________</p>
+						<form name='form' action='' method='get'>
+							<i>For School Use</i><b>-Permission to Register:</b>
+							<input type='text' name='permission_register'>
+						</form>
 					</div>
 			        <div class="two">
-			        	<p class='date'>Date: _____________</p>
+			        	<form name='form' action='' method='get'>
+			        		Date:
+			        		<input type='date' name='reg_date' id='reg_date'>
+			        		<script>
+			        			document.getElementById('reg_date').valueAsDate = new Date();
+			        		</script>
+			        	</form>
+			        	
 			        </div>
-			        <div class="three" id='checks'>
+			        <div class="three" id=''>
 			        	<form action="/action_page.php">
 							<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">ESL</label>
 
@@ -27,25 +40,56 @@
 
 				<div class='container second'>
 					<div class="one">
-						<p>Student Number: _____________</p>
+						<form name='form' action='' method='get'>
+							<span class='a'>
+								Student Number:
+							</span>
+								<input type='text' class='b' name='stud_number'>
+							
+						</form>
 					</div>
 			        <div class="two">
-			        	<p>Entry Date: _____________</p>
+			        	<form name='form' action='' method='get'>
+				        	<p>
+				        		Entry Date:
+				        		<input type='text' name='entry_date'>
+				        	</p>
+				        </form>
 			        </div>
 			        <div class="three">
-			        	<p>Entry Type: _____________</p>
+			        	<form name='form' action='' method='get'>
+				        	<p>
+				        		Entry Type:
+				        		<input type='text' name='entry_type'>
+				        	</p>
+				        </form>
 			        </div>
 			        <div class="four">
-			        	<p>Grade: _____________</p>
+			        	<form name='form' action='' method='get'>
+				        	<p>
+				        		Grade:
+				        		<input type='text' name='grade'>
+				        	</p>
+				        </form>
 			        </div>
 				</div>
 
 				<div class='container second'>
 					<div class="one">
-						<p>OEN: _____________</p>
+						<form name='form' action='' method='get'>
+							<p>
+								OEN: 
+								<input type='text' name='oen'>
+							</p>
+						</form>
 					</div>
 			        <div class="two">
-			        	<p class='date'>Class/Homeform: _____________</p>
+			        	<form name='form' action='' method='get'>
+			        		<p>
+			        			Class/Homeform:
+			        			<input type='text' name='homeform'>
+			        		</p>
+			        	</form>
 			        </div>
 
 				</div>
@@ -69,13 +113,34 @@
 			<div class='boxes'>
 				<div class='container first'>
 					<div class="one">
-						<p>Full Legal Name: __________________________________________________________________</p>
+						<form name='form' action='' method='get'>
+							<div id='left'>
+								Full Legal Name: 
+							</div>
+							<div id='right'>
+								<input type='text' id='name_input' name='last_name' placeholder='Last Name'>
+								<input type='text' id='name_input' name='first_name' placeholder='First Name'>
+								<input type='text' id='name_input' name='middle_name' placeholder='Middle Name'>
+							</div>
+							
+						</form>
+						
 					</div>
 				</div>
 
 				<div class='container second'>
 					<div class="one">
-						<p>Preferred Name (if different): _____________</p>
+						<form name='form' action='' method='get'>
+							<br>
+							<div id='left'>
+								Preffered Name (if different): 
+							</div>
+							<div id='right'>
+								<input type='text' id='name_input' name='pref_last_name' placeholder='Last Name'>
+								<input type='text' id='name_input' name='pref_first_name' placeholder='First Name'>
+								<input type='text' id='name_input' name='pref_middle_name' placeholder='Middle Name'>
+							</div>
+						</form>
 					</div>
 				</div>
 
