@@ -9,8 +9,7 @@ body {
 	left  : 0;
 	right : 0;
 	margin: auto;
-
-	width: 900px;
+	width: 1000px;
 	border: 1px;
 	border-color: red;
 	border-style: solid;
@@ -20,7 +19,6 @@ body {
 
 .boxes {
 	border: 1px solid black;
-
 }
 
 .title {
@@ -61,3 +59,26 @@ body {
 	margin-top: -25px;
 }
 
+.expell {
+	width: 500px;
+}
+
+.birth {
+	border: 1px;
+	border-color: red;
+	border-style: solid;
+	margin-top: -5px;
+}
+
+.canada {
+	width: 500px;
+}
+
+.column_2{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.column_2>span{
+  display:block;
+}
