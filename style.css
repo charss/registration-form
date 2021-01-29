@@ -1,127 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-	font-size: 13px;
-	box-sizing: border-box;
-	font-family: 'Montserrat';
-}
 
 .main {
-	position: relative;
-	top   : 2%;
-	left  : 0;
-	right : 0;
 	margin: auto;
-	width: 1000px;
-	border: 1px;
-	border-color: red;
-	border-style: solid;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 1100px;
 }
 
-.boxes {
-	border: 1px solid black;
-}
-
-.title {
-	margin-left: 3%;
-}
 
 .container {
-	display: flex; /* or inline-flex */
-	flex-direction: row;
-
-}
-
-.one {
-	display: inline-block;
-	flex: 1 1 auto;
-	padding-top: 4px;
-}
-
-.two {
-	flex: 1 1 auto;
+	display: flex;
 	border: 1px;
-
-}
-
-.three {
-	flex: 1 1 auto;
-	border: 1px;
-}
-
-#checks {
-	padding-top: 15px;
-}
-
-.four {
-	flex: 1 1 auto;
-	border: 1px;
-}
-
-.second  {
-	margin-top: -25px;
-}
-
-.expell {
-	width: 500px;
-}
-
-.birth {
-	border: 1px;
-	border-color: red;
+	border-color: black;
 	border-style: solid;
-	margin-top: -5px;
+	flex-grow: 1;
+	padding: 3px;
+	
 }
 
-.canada {
-	width: 500px;
+.board {
+	border: 1px;
+	border-style: solid;
+	border-color: black
 }
 
-.column_2{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-}
-.column_2>span{
-  display:block;
+#prio {
+	flex: 2;
 }
 
 input[type=text] {
-	border: none;
-	border-bottom: 2px solid gray;
-
-}
-
-
-#left {
-	float: left;
 	background-color: pink;
 }
 
-#right {
-	width: 100%;
-	background-color: red;
+
+label {
+	margin-right: 5px;
 }
 
-#name_input {
-	width: 20%;
+
+p {
+	display: inline-flex;
 	flex: 1 1 auto;
-	float: none;
+/*	border: 1px;
+	border-style: solid;
+	border-color: black;*/
 }
 
-.shorter {
-	display: inline-block;
-	overflow: auto;
+input {
+	flex-grow: 1;
+	margin-right: 5px;
 }
 
-.a {
-    float:left; 
-    background-color:red
+.date {
+	padding-right: -500px;
 }
 
-.b {
-    background-color:green;
-    display:block;
+#siblings {
+	width: 100%;
 }
+
+#below {
+	flex-direction: column;
+}
+
+#gender {
+	flex: 1 1 auto;
+	margin-right: 50px;
+}
+
+#birth {
+	flex: 7 1 auto;
+}
+
+#language {
+	flex: 1 1 auto;
+	margin-right: 50px;
+}
+
+#reason {
+	flex: 4 1 auto;
+}
+
+#higher {
+	margin-top: -15px;
+}
+
+#no_board {
+	border: none;
+}
+
+#f_start {
+	align-items: flex-start;
+}
+
+#medical {
+	align-items: flex-end;
+}
+
+#blank {
+	flex: 7 1 auto;
+}
+
+#epipen {
+	margin-left: 20px;
+	margin-right: 20px;
+	flex: 1 1 auto;
+}
+
