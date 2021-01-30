@@ -13,7 +13,7 @@
 	border-style: solid;
 	flex-grow: 1;
 	padding: 3px;
-	
+	margin-bottom: 5px;
 }
 
 .board {
@@ -91,6 +91,10 @@ input {
 	align-items: flex-start;
 }
 
+#f_end {
+	align-items: flex-end;
+}
+
 #medical {
 	align-items: flex-end;
 }
@@ -105,3 +109,16 @@ input {
 	flex: 1 1 auto;
 }
 
+
+#status {
+	margin-top: -20px;
+}
+
+#perm_resident {
+	margin-left: 82px;
+
+}
+
+#try {
+	margin-left: -3px;
+}

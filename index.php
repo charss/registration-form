@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title></title>
-		<link rel='stylesheet' href='style2.css'>
+		<link rel='stylesheet' href='style.css'>
 	</head>
 	<body>
 		<?php
@@ -220,7 +220,6 @@
 			    	<span>
 						<div class='container'>
 							<p>
-							<p>
 								<label>Birth Country:</label>
 								<input type='text'name='pref_last_name' placeholder='Last Name'>
 							</p>
@@ -241,50 +240,51 @@
 						<div class='container'>
 							<p>
 								<label>If student not born in Canada, provide data student entered Canada to live for the first time:</label>
+							</p>
+							<p id='f_end'>
 								<input type='text'name='pref_last_name' placeholder='Last Name'>
 							</p>
 						</div>
 					</span>
 
-					<span>
-						<div class='container'>
-							<div class="row">
-								<div class="form-group-lg col-xs-5">
-									<label class="control-label" for="facilities"><i>For School Use</i><b> - Status in Canada:</b></label>
-									<div>
-										<div th:each="facility : ${facilities}" class="column_2">
-											<span>
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Canadian Citizen</label>
-											</span>
-											<span>
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Study Permit/Student Visa</label>
-											</span>
-
-											<span>
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Native Ancestry</label>
-											</span>
-
-											<span>
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Permanent Resident/Landed Immigrant</label>
-											</span>
-
-											<span>
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Refugee Claimant</label>
-											</span>
-										</div>
-
-										<span>
-											<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Other (specify): _______________________</label>
-										</span>
-										<br>
-										<span>
-											<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1">Verification in OSR</label>
-										</span>
-									</div>
-								</div>
-							</div>
+					<div class='board'>
+						<div id=''>
+							<p>
+								<label><i>For School Use</i> - <b>Status in Canada:</b></label>
+							</p>
 						</div>
-					</span>
+						<div id='status'>
+							<p>
+								<input type="checkbox" id="can_citizen" name="can_citizen" value="Bike">
+								Canadian Citizen
+								<input type="checkbox" id="perm_resident" name="vehicle2" value="Car">Permanent Resident/Landed Immigrant
+							</p>
+						</div>
+						<div id='status'>
+							<p>
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Study Permit/Student Visa
+								<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">Refugee Claimant
+							</p>
+						</div>
+						<div id='status'>
+							<p>
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Native Ancestry
+							</p>
+						</div>
+						<div id='status'>
+							<p class='container' id='no_board'>
+								<span id='try'>
+									<input type="checkbox" id="status_other" name="vehicle1" value="Bike">Other (specify):
+								</span>
+								<input type='text' name='permission_register' />
+							</p>
+						</div>
+						<div id='status'>
+							<p>
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Verification in OSR
+							</p>
+						</div>
+					</div>
 			    </div>
 			</div>
 		</form>
