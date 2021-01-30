@@ -12,7 +12,6 @@ body {
 	border-style: solid;
 	padding: 100px 70px 60px 70px;
 	font-family: 'Roboto';
-	font-size: 15px;
 	background-color: white;
 }
 
@@ -46,6 +45,7 @@ input[type=text] {
 
 label {
 	margin-right: 5px;
+	font-size: 13px;
 }
 
 
@@ -55,14 +55,19 @@ p {
 	padding-right: 2px;
 }
 
-input  {
+input {
 	flex-grow: 1;
 	margin-right: 5px;
 	background-color: transparent;
+	
 }
 
 input[type=date] {
 	background-color: white;
+}
+
+input[type=text] {
+	font-size: 16px;
 }
 
 .date {

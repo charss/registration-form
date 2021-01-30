@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+	background-color: #badbc3;
+}
+
+.main {
+	margin: auto;
+	width: 1065px;
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	padding: 100px 70px 60px 70px;
+	font-family: 'Roboto';
+	background-color: white;
+}
+
+
+.container {
+	display: flex;
+	flex-grow: 1;
+	padding: 3px;
+	margin-bottom: 2px;
+}
+
+.board {
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	margin: 2px;
+
+}
+
+#prio {
+	flex: 2;
+}
+
+input[type=text] {
+	border: 0;
+	border-bottom: 2px gray solid;
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+
+label {
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+
+p {
+	display: inline-flex;
+	flex: 1 1 auto;
+	padding-right: 2px;
+}
+
+input {
+	flex-grow: 1;
+	margin-right: 5px;
+	background-color: transparent;
+	
+}
+
+input[type=date] {
+	background-color: white;
+}
+
+input[type=text] {
+	font-size: 16px;
+	color: red;
+}
+
+.date {
+	padding-right: -500px;
+}
+
+#siblings {
+	width: 100%;
+}
+
+#below {
+	flex-direction: column;
+}
+
+#gender {
+	flex: 1 1 auto;
+	margin-right: 50px;
+}
+
+#birth {
+	flex: 7 1 auto;
+}
+
+#language {
+	flex: 1 1 auto;
+	margin-right: 50px;
+}
+
+#reason {
+	flex: 4 1 auto;
+}
+
+#higher {
+	margin-top: -15px;
+}
+
+#no_board {
+	border: none;
+}
+
+#f_start {
+	align-items: flex-start;
+}
+
+#f_end {
+	align-items: flex-end;
+}
+
+#medical {
+	align-items: flex-end;
+}
+
+#blank {
+	flex: 7 1 auto;
+}
+
+#epipen {
+	margin-left: 20px;
+	margin-right: 20px;
+	flex: 1 1 auto;
+}
+
+
+#status {
+	margin-top: -20px;
+}
+
+#perm_resident {
+	margin-left: 98px;
+
+}
+
+#try {
+	margin-left: -3px;
+}
+
+#expell {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+
+#expell_div {
+	width: 550px;
+}
+
+.box_label {
+	color: white;
+	width: 250px;
+	background-color: #121212;
+	padding: 2px;
+	margin-left: 2px;
+	margin-bottom: -2px;
+	font-weight: 300;
+}
+
+#proof_birth {
+	border-top: 1px;
+	border-style: solid;
+	margin-top: -3px;
+	margin-bottom: 3px;
+	font-size: 13.8px;
+	padding-left: 5px;
+}
+
+.for_school_use {
+	background-color: #d4d4d4;
+}
+

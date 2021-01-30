@@ -5,11 +5,11 @@
 	</head>
 	<body>
 		<?php
-			$name = '';
+			session_start();
 		?>
 
 
-		<form name='form' action='' method='get'>
+		<form name='form' action='output.php' method='get'>
 			<div class='main'>
 				<h1>Student Registration Form</h1>
 				<div class='board for_school_use'>
@@ -79,18 +79,18 @@
 					<div class='container'>
 						<p>
 							<label>Full Legal Name:</label>
-							<input type='text' name='last_name' placeholder='Last Name'>
-							<input type='text' name='first_name' placeholder='First Name'>
-							<input type='text' name='middle_name' placeholder='Middle Name'>
+							<input type='text' name='last_name' placeholder='Last Name' value=''>
+							<input type='text' name='first_name' placeholder='First Name' value=''> 
+							<input type='text' name='middle_name' placeholder='Middle Name' value=''>
 						</p>
 					</div>
 
 					<div class='container'>
 						<p>
 							<label>Preffered Name (if different):</label>
-							<input type='text' name='pref_last_name' placeholder='Last Name'>
-							<input type='text' name='pref_first_name' placeholder='First Name'>
-							<input type='text' name='pref_middle_name' placeholder='Middle Name'>
+							<input type='text' name='pref_last_name' placeholder='Last Name' value=''>
+							<input type='text' name='pref_first_name' placeholder='First Name' value=''>
+							<input type='text' name='pref_middle_name' placeholder='Middle Name' value=''>
 						</p>
 					</div>
 
@@ -115,19 +115,20 @@
 
 				<div class='board for_school_use' id='proof_birth'>
 					<label><i>For School Use</i><b>- Proof of Birth</b>:</label>
-					<input type="checkbox" name="OSR" value="OSR"><label for="vehicle1">Copy in OSR</label>
+					<input type="checkbox" name="proof[]" value="OSR"><label>Copy in OSR</label>
 
-					<input type="checkbox" name="BAPTISMAL" value="BAPTISMAL"><label for="vehicle2">Baptismal Record</label>
+					<input type="checkbox" name="proof[]" value="BAPTISMAL"><label>Baptismal Record</label>
 
-					<input type="checkbox" name="BIRTH_REGISTRATION" value="BIRTH_REGISTRATION"><label for="vehicle2">Birth Registration</label>
+					<input type="checkbox" name="proof[]" value="BIRTH_REGISTRATION"><label>Birth Registration</label>
 
-					<input type="checkbox" name="BIRTH_CERTIFICATE" value="BIRTH_CERTIFICATE"><label for="vehicle2">Birth Certificate</label>
+					<input type="checkbox" name="proof[]" value="BIRTH_CERTIFICATE"><label>Birth Certificate</label>
 
-					<input type="checkbox" name="IMMIGRATION" value="IMMIGRATION"><label for="vehicle2">Immigration Papers/Card</label>
+					<input type="checkbox" name="proof[]" value="IMMIGRATION"><label>Immigration Papers/Card</label>
 
-					<input type="checkbox" name="PASSPORT" value="PASSPORT"><label for="vehicle2">Passport</label>
+					<input type="checkbox" name="proof[]" value="PASSPORT"><label>Passport</label>
 
-					<input type="checkbox" name="OTHER_PROOF" value="OTHER_PROOF"><label for="vehicle2">Other</label>
+					<input type="checkbox" name="proof[]" value="OTHER_PROOF"><label>Other</label>
+
 				</div>
 
 				<div class='box_label'>Previous School Information</div>
@@ -135,7 +136,7 @@
 					<div class='container'>
 						<p>
 							<label>Name of Previous School Board / Municipality:</label>
-							<input type='text'name='PREV_SCHOOL_BOARD'>
+							<input type='text' name='PREV_SCHOOL_BOARD'>
 						</p>
 				        <p>
 				        	<label>Last date attended:</label>
@@ -157,11 +158,11 @@
 					<div class='container'>
 						<p id='language'>
 			        		<label>Language Instruction:</label>
-							<input type="checkbox" name="ENGLISH" value="ENGLISH">English
+							<input type="checkbox" name="language_ins[]" value="ENGLISH">English
 
-							<input type="checkbox" name="FRENCH" value="FRENCH">French
+							<input type="checkbox" name="language_ins[]" value="FRENCH">French
 
-							<input type="checkbox" name="OTHER_LANG" value="OTHER_LANG">Other
+							<input type="checkbox" name="language_ins[]" value="OTHER_LANG">Other
 						</p>
 
 				        <p id='reason'>
@@ -178,7 +179,6 @@
 
 						<input type="radio" name="WATERLOO" value="No">No
 						If yes, name school(s):
-						<p>
 					</p>
 
 					<div class='container' id='no_board'>
@@ -216,7 +216,7 @@
 
 				    <div class='container'>
 				    	<p id='blank'>
-							<input type='text'name='MEDICAL_CONDITION'>
+							<input type='text'name='MEDICAL_CONDITION2'>
 						</p>
 
 						<p id='epipen'>
@@ -270,40 +270,43 @@
 							</div>
 							<div id='status'>
 								<p>
-									<input type="checkbox" id="can_citizen" name="can_citizen" value="can_citizen">
+									<input type="checkbox" id="can_citizen" name="canada_status[]" value="can_citizen">
 									Canadian Citizen
-									<input type="checkbox" id="perm_resident" name="perm_resident" value="perm_resident">Permanent Resident/Landed Immigrant
+									<input type="checkbox" id="perm_resident" name="canada_status[]" value="perm_resident">Permanent Resident/Landed Immigrant
 								</p>
 							</div>
 							<div id='status'>
 								<p>
-									<input type="checkbox" name="student_visa" value="student_visa">Study Permit/Student Visa
-									<input type="checkbox" name="refugee" value="refugee">Refugee Claimant
+									<input type="checkbox" name="canada_status[]" value="student_visa">Study Permit/Student Visa
+									<input type="checkbox" name="canada_status[]" value="refugee">Refugee Claimant
 								</p>
 							</div>
 							<div id='status'>
 								<p>
-									<input type="checkbox" name="native_ancestry" value="native_ancestry">Native Ancestry
+									<input type="checkbox" name="canada_status[]" value="native_ancestry">Native Ancestry
 								</p>
 							</div>
 							<div id='status'>
 								<p class='container' id='no_board'>
 									<span id='try'>
-										<input type="checkbox" id="status_other" name="status_other" value="status_other"><label>Other (specify):</label>
+										<input type="checkbox" name="canada_status[]" value="status_other"><label>Other (specify):</label>
 									</span>
 									<input type='text' name='status_text' />
 								</p>
 							</div>
 							<div id='status'>
 								<p>
-									<input type="checkbox" name="osr_veri" value="osr_veri">Verification in OSR
+									<input type="checkbox" name="canada_status[]" value="osr_veri">Verification in OSR
 								</p>
 							</div>
 						</div>
 				    </div>
 			    </div>
 			</div>
+
+			<input type="submit" name="submit" value="submit">
 		</form>
+
 
 
 	</body>
