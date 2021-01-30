@@ -5,7 +5,6 @@ body {
 }
 
 .main {
-	margin: auto;
 	width: 1065px;
 	border: 1px;
 	border-color: black;
@@ -68,6 +67,10 @@ input[type=date] {
 
 input[type=text] {
 	font-size: 16px;
+}
+
+input[type=submit] {
+	margin: auto;
 }
 
 .date {
@@ -175,5 +178,19 @@ input[type=text] {
 
 .for_school_use {
 	background-color: #d4d4d4;
+}
+
+.button {
+	min-width: 150px;
+	max-width: 250px;
+	border: 3px;
+	font-size: 20px;
+	border-color: black;
+	border-style: solid;
+	background-color: black;
+	border-radius: 5px;
+	position: relative;
+	left: 40%;
+	color: white;
 }
 

@@ -302,9 +302,10 @@
 						</div>
 				    </div>
 			    </div>
+		    	<input type="submit" class='button' name="submit" value="SUBMIT">
 			</div>
 
-			<input type="submit" name="submit" value="submit">
+			
 		</form>
 
 
