@@ -38,11 +38,7 @@
 			$canada_date = $_GET['CANADA_DATE'];
 			$canada_status = $_GET['canada_status'];
 			$status_text = $_GET['status_text'];
-
-
-
 		?>
-
 
 		<div class='main'>
 			<h1>Student Information</h1>
@@ -104,8 +100,6 @@
 					<label>Is the student currently expelled from any school or school board?</label>
 					<input type="radio" name="expell" <?php echo($expell == 'Yes' ? 'checked="checked"' : ''); ?> disabled>Yes
 					<input type="radio" name="expell" <?php echo($expell == 'No' ? 'checked="checked"' : ''); ?> disabled>No
-<!-- 					<input type="radio" name="expell" value="Yes">Yes
-					<input type="radio" name="expell" value="No">No -->
 				</p>
 			</div>
 
