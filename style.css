@@ -6,7 +6,7 @@ body {
 
 .main {
 	margin: auto;
-	width: 1050px;
+	width: 1065px;
 	border: 1px;
 	border-color: black;
 	border-style: solid;
@@ -29,6 +29,7 @@ body {
 	border-style: solid;
 	border-color: black;
 	margin: 2px;
+
 }
 
 #prio {
@@ -51,11 +52,17 @@ label {
 p {
 	display: inline-flex;
 	flex: 1 1 auto;
+	padding-right: 2px;
 }
 
-input {
+input  {
 	flex-grow: 1;
 	margin-right: 5px;
+	background-color: transparent;
+}
+
+input[type=date] {
+	background-color: white;
 }
 
 .date {
@@ -124,7 +131,7 @@ input {
 }
 
 #perm_resident {
-	margin-left: 82px;
+	margin-left: 98px;
 
 }
 
@@ -145,15 +152,23 @@ input {
 .box_label {
 	color: white;
 	width: 250px;
-	background-color: black;
+	background-color: #121212;
 	padding: 2px;
 	margin-left: 2px;
 	margin-bottom: -2px;
+	font-weight: 300;
 }
 
 #proof_birth {
-	border-top: 0px;
+	border-top: 1px;
+	border-style: solid;
 	margin-top: -3px;
 	margin-bottom: 3px;
 	font-size: 13.8px;
+	padding-left: 5px;
 }
+
+.for_school_use {
+	background-color: #d4d4d4;
+}
+
